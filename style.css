@@ -24,6 +24,9 @@ section{
   color: rgb(212, 252, 250);
 }
 
+#animationContainer{
+  width: 50%;
+}
 
 .hidden {
   opacity: 0;
