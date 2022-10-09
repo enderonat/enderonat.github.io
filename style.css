@@ -25,7 +25,7 @@ section{
 }
 
 #animationContainer{
-  width: 50%;
+  max-width: 800px;
 }
 
 .hidden {
