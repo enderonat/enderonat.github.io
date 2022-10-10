@@ -1,20 +1,12 @@
+document.body.scrollTop = document.documentElement.scrollTop = 0;
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     } else {
       entry.target.classList.remove("show");
     }
-  });
-});
-
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
   });
 });
 
@@ -25,6 +17,6 @@ var animation = bodymovin.loadAnimation({
   container: document.getElementById("animationContainer"),
   path: "line-chart.json",
   render: "svg",
-  loop: "true",
+  autoplay: "false",
   name: "animation",
 });
