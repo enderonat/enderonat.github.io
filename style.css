@@ -1,30 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
   background-color: #131313;
-  color: #ffffff;
-  font-family:'Poppins', sans-serif;
+  color: #fffffff1;
+  font-family: "Poppins", sans-serif;
   padding: 0;
-  margin: 0;
+  margin: 20px;
 }
 
-section{
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#343a40;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(39, 39, 76);
+}
+
+section {
   display: grid;
   place-items: center;
   align-content: center;
   text-align: center;
-  min-height: 110vh;
-  
+  min-height: 105vh;
 }
 
 .nav-link {
   color: #ffffff;
 }
 
-.navbar-brand{
-  color: rgb(212, 252, 250);
-}
-
-#animationContainer{
+#animationContainer {
   max-width: 700px;
 }
 
@@ -33,6 +44,13 @@ section{
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s;
+}
+
+.logoHidden {
+  width: 80px;
+  height: 80px;
+  padding: 1rem;
+  margin: 0 0.5rem;
 }
 
 .show {
