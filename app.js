@@ -12,7 +12,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 var animation = bodymovin.loadAnimation({
   container: document.getElementById("animationContainer"),
   path: "line-chart.json",
-  render: "jpeg",
+  render: "svg",
   autoplay: "false",
   name: "animation",
 });
