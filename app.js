@@ -20,5 +20,3 @@ var animation = bodymovin.loadAnimation({
   autoplay: "false",
   name: "animation",
 });
-
-const ctx = animation.getContext("2d", { willReadFrequently: true });
