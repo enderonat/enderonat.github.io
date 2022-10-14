@@ -46,6 +46,12 @@ section {
   transition: all 1s;
 }
 
+@media only screen and (max-width: 420px) {
+  .hidden {
+    transition: none;
+  }
+}
+
 .logoHidden {
   width: 80px;
   height: 80px;
