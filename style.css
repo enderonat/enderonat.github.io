@@ -46,7 +46,7 @@ section {
   transition: all 1s;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 430px) {
   .hidden {
     transition: none;
   }
