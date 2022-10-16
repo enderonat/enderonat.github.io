@@ -1,3 +1,5 @@
+"use strict"
+
 document.body.scrollTop = document.documentElement.scrollTop = 0;
 
 const observer = new IntersectionObserver((entries) => {
