@@ -43,14 +43,10 @@ section {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
+  transform: translateZ(0);
   transition: all 1s;
 }
 
-@media only screen and (max-width: 420px) {
-  .hidden {
-    transition: none;
-  }
-}
 
 
 .logoHidden {
@@ -74,4 +70,5 @@ section {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+  transform: translateZ(0);
 }
